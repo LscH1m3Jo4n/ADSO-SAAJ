@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="images/LOGO.ico">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>REGISTRO DE PROCESO JURIDICO</title>
+    </head>
+<body>
+    <header>
+        <div class="logo">
+           <img src="images/LOGO.ico" class="logo">
+        </div>
+        <div class="nav">
+           <nav>
+           <a href="index_main.html" class="nav-link"> Inicio </a>
+           <a href="index_consultar_cases.html" class="nav-link"> Consultas </a>
+           <a href="index_contact.html" class="nav-link"> Contacto </a>
+           </nav>
+        </div>
+        <div id="click-nav" class="click-nav"> 
+           <ul class="js">           
+               <li>
+                   <a href="#">
+        <img id="ICON" alt="Icono para cambiar de tamaño los textos" src="images/tamanoico.png" width="40px" height="12px" title="Click para cambiar de tamaño los textos">
+        <ul id="text-resizer-controls" class="textresizer" style="display: block;">
+           <li><a href="javascript:void(0);" onclick="javascript:body.style.fontSize = '1em'" title="Cambiar a Texto Normal."><span> Normal A</span></a></li>
+           <li><a href="javascript:void(0);" onclick="javascript:body.style.fontSize = '1.3em'" title="Cambiar a Texto grande."><span> Grande +A</span></a></li>
+           <li><a href="javascript:void(0);" onclick="javascript:body.style.fontSize = '1.6em'" title="Cambiar a Texto más grande."><span> Más Grande ++A</span></a></li>
+        </ul>   
+              </li>
+           </ul>
+       </div>
+     </header>
+    <form method="post" action="sql_cases.php" class="form">
+        <img class="imgcase" src="images/LOGO.ico">
+        <h2 class="title_eform">INGRESE LOS DATOS DEL PROCESO JURIDICO</h2>
+        <div class="container_eform">
+            <div class="group_eform">
+                <input type="text" name="document" id="document" class="input_eform" placeholder=" ">
+                <label for="document" class="label_eform">Documento</label>
+            </div>
+            <div class="group_eform">
+                <input type="text" name="name" id="name" class="input_eform" placeholder=" ">
+                <label for="name" class="label_eform">Nombre</label>
+            </div>
+            <div class="group_eform">
+                <input type="text" name="lastname" id="lastname" class="input_eform" placeholder=" ">
+                <label for="lastname" class="label_eform">Apellido</label>
+            </div>
+            <div class="group_eform">
+                <input type="text" name="tp" id="tp" class="input_eform" placeholder=" ">
+                <label for="lastname" class="label_eform">Tarjeta Profesional</label>
+            </div>
+            <div class="group_eform">
+                <input type="text" name="phone" id="phone" class="input_eform" placeholder=" ">
+                <label for="phone" class="label_eform">Numero</label>
+            </div>
+            <div class="group_eform">
+                <input type="text" name="address" id="address" class="input_eform" placeholder=" ">
+                <label for="address" class="label_eform">Despacho</label>
+            </div>
+            <div class="group_eform">
+                <label for="city" class="label_eformcity">Ciudad del despacho</label>
+                <select id="city" class="input_eform" name="city">
+                    <option value="Armenia">Armenia</option>
+                    <option value="Bogota">Bogotá</option>
+                    <option value="Barranquilla">Barranquilla</option>
+                    <option value="Bucaramanga">Bucaramanga</option>
+                    <option value="Cartagena">Cartagena</option>
+                    <option value="Cali">Cali</option>
+                    <option value="Cucuta">Cúcuta</option>
+                    <option value="Pereira">Pereira</option>
+                    <option value="Palmira">Palmira</option>
+                    <option value="Pasto">Pasto</option>
+                    <option value="Medellin">Medellin</option>
+                    <option value="Manizales">Manizales</option>
+                    <option value="Tunja">Tunja</option>
+                    <option value="Ibague">Ibague</option>
+                    <option value="Santa Marta">Santa Marta</option>
+                    <option value="Valledupar">Valledupar</option>
+                    <option value="Villavicencio">Villavicencio</option>
+                </select>
+            </div>
+            <div class="group_eform">
+                <input type="Submit" id="address" class="submitcase" value="Agregar proceso">            </div>
+        </div>
+    </form>
+</body>
+</html>

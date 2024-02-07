@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<body class="mainbody">
+<!--Codigo XML para la funcion de accesibilidad-->
+    <header name="header">
+        <image class="logo" img="logo.png" marked="vision">
+            <normal weigth= 2px width= 2px/>
+            <sizefont size= large/>
+            <colorfont r= g= b= />
+            <brightness intensity= less/>
+            <colorblind intensity= 5px;/>  
+        </image>
+        <nav class= "headernav" marked="vision">
+            <sizefont size= large/>
+            <colorfont r= g= b= />
+            <textdecoration color= inverted/> 
+            <brightness intensity= less/>
+            <colorblind intensity= 5px;/>  
+        </nav>
+    </header>
+    <section class="section" marked="vision">
+            <sizefont size= large/>
+            <colorfont r= g= b= />
+            <brightness intensity= less/>
+            <colorblind intensity= 5px;/>  
+        <input class="forminput">
+            <sizefont size= large/>
+            <brightness intensity= less/>
+            <colorblind intensity= 5px;/>
+        </input>
+        <input class="formsubmit">
+            <sizefont size= large/>
+            <brightness intensity= less/>
+            <colorblind intensity= 5px;/>
+        </input>
+        <p class="forgotpassword">
+            <a class= "forgotlink">
+                <sizefont size= large/>
+                <textdecoration color= inverted/>
+                <colorblind intensity= 5px;/>
+            </a>
+        </p>
+    </section>
+</body>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <title> SAAJ </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel ="icon" type="image/x-icon" href="images/LOGO.ico" title="Servicio de Apoyo para la Administración de Justicia">
+ </head>
+ <body>
+   <header>
+      <!--Pagina HTML principal-->
+      <div class="logo">
+         <img src="images/LOGO.ico" class="logo">
+      </div>
+      <div class="nav">
+         <nav>
+         <a href="index_main.html" class="nav-link"> Inicio </a>
+         <a href="index_consultar_cases.html" class="nav-link"> Consultas </a>
+         <a href="index_contact.html" class="nav-link"> Contacto </a>
+         </nav>
+      </div>
+      <div id="click-nav" class="click-nav"> 
+         <ul class="js">           
+             <li>
+                 <a href="#">
+      <img id="ICON" alt="Icono para cambiar de tamaño los textos" src="images/tamanoico.png" width="40px" height="12px" title="Click para cambiar de tamaño los textos">
+      <ul id="text-resizer-controls" class="textresizer" style="display: block;">
+         <li><a href="javascript:void(0);" onclick="javascript:body.style.fontSize = '1em'" title="Cambiar a Texto Normal."><span> Normal A</span></a></li>
+         <li><a href="javascript:void(0);" onclick="javascript:body.style.fontSize = '1.3em'" title="Cambiar a Texto grande."><span> Grande +A</span></a></li>
+         <li><a href="javascript:void(0);" onclick="javascript:body.style.fontSize = '1.6em'" title="Cambiar a Texto más grande."><span> Más Grande ++A</span></a></li>
+      </ul>   
+            </li>
+         </ul>
+     </div>
+   </header>
+   <form method="post" action="mysql.php">
+      <table>
+         <section class="login">
+            <h4>Inicia Sesión</h4>
+               <input class="bottoms" type="text" name="txtuser" value="" placeholder="Usuario">
+               <input class="bottoms" type="password" name="txtpassword" value="" placeholder="Contraseña">
+               <input class="bottom" type="submit" name="" value="Ingresar">
+            <p><a href="index_ForgotPass.html">¿Ha olvidado su contraseña?</a></p>
+            <p><a href="index_CreateUser.html">Registrar un usuario nuevo</a></p>
+         </section>
+      </table>
+   </form>
+ </body>
+</html>

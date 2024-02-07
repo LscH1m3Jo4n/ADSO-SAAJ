@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> SAAJ- Reestablecimiento de contraseña </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel ="icon" type="image/x-icon" href="/SAAJGA6/SAAJ/images/LOGO.ico">
+</head>
+<body>
+    <header>
+        <!--Pagina de creacion de usuario-->
+        <div class="logo">
+           <img src="images/LOGO.ico" class="logo">
+        </div>
+        <div class="nav">
+           <nav>
+           <a href="index_main.html" class="nav-link"> Inicio </a>
+           <a href="index_consultar_cases.html" class="nav-link"> Consultas </a>
+           <a href="index_contact.html" class="nav-link"> Contacto </a>
+           </nav>
+        </div>
+        <div id="click-nav" class="click-nav"> 
+           <ul class="js">           
+               <li>
+                   <a href="#">
+        <img id="ICON" alt="Icono para cambiar de tamaño los textos" src="images/tamanoico.png" width="40px" height="12px" title="Click para cambiar de tamaño los textos">
+        <ul id="text-resizer-controls" class="textresizer" style="display: block;">
+           <li><a href="javascript:void(0);" onclick="javascript:body.style.fontSize = '1em'" title="Cambiar a Texto Normal."><span> Normal A</span></a></li>
+           <li><a href="javascript:void(0);" onclick="javascript:body.style.fontSize = '1.3em'" title="Cambiar a Texto grande."><span> Grande +A</span></a></li>
+           <li><a href="javascript:void(0);" onclick="javascript:body.style.fontSize = '1.6em'" title="Cambiar a Texto más grande."><span> Más Grande ++A</span></a></li>
+        </ul>   
+              </li>
+           </ul>
+       </div>
+     </header>
+     <div class="container">
+        <form method="post" action="mysqlaction.php">
+            <label for="radicado" class="label_eforme">Ingrese su correo electronico</label>
+            <input class="radicado" type="text" name="txtmail" value="" placeholder="Correo electronico">
+            <input class="bottom" type="submit" name="" value="Enviar">
+            <a href="index_main.html" class="ahome_link">Regresar al menú principal </a>
+        </form>
+    </div>
+</body>
+</html>
